@@ -1,0 +1,60 @@
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1976d2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1976d2;
+}
+
+
+a{
+    text-decoration: none!important;
+}
+.v-dialog{
+    overflow-x: hidden!important;
+}
+.panel {
+    margin: 0.2em;
+    border: 3px solid hsla(0, 0%, 78.4%, 0.9);
+    background-color: rgba(39, 43, 48, 0.9);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    min-height: 40px;
+    position: relative;
+    padding: 1em;
+    color: white;
+    &:hover{
+      background: hsla(0, 0%, 78.4%, 0.9);
+      color: rgba(39, 43, 48, 0.9);
+      cursor: pointer;
+      .v-icon{
+        color: rgba(39, 43, 48, 0.9);
+      }
+    }
+  }
+  .panel-wrapper:after,
+  .panel-wrapper:before {
+    content: "";
+    height: 2px;
+    background-color: #444;
+    position: absolute;
+    left: 80px;
+    right: 80px;
+  }
+  .panel-wrapper:before {
+    top: -2px;
+  }
+  .panel-wrapper::after {
+    bottom: -2px;
+  }
